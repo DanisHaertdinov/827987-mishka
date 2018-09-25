@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Данис Хаертдинов](https://up.htmlacademy.ru/adaptive/15/user/827987).
-* Наставник: `Неизвестно`.
+* Наставник: [Марина Удовенко](https://htmlacademy.ru/profile/id7570).
 
 ---
 
