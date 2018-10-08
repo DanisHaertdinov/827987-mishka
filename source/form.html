@@ -3,33 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo"><img class="page-header__logo-image" src="placeholde.it" width="226" height="30" alt="Магазин товаров ручной работы Мишка">
+      <a class="page-header__logo" href="index.html"><img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин товаров ручной работы Мишка">
       </a>
-      <nav class="main-navigation">
-        <button class="main-navigation__toggle--open" type="button"></button>
+      <nav class="page-header__main-navigation main-navigation">
+        <button class="main-navigation__toggle main-navigation__toggle--open" type="button"></button>
         <ul class="main-navigation__list site-list">
           <li class="site-list__item">
-            <a href="#">
+            <a class="site-list__link" href="catalog.html">
               Каталог товаров
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#">
+            <a class="site-list__link" href="#">
               Вязание на заказ
             </a>
           </li>
         </ul>
         <ul class="main-navigation__list user-list">
           <li class="user-list__item">
-            <a class="user-list__search" href="#">
+            <a class="user-list__link user-list__link--search" href="#">
               Поиск по сайту
             </a>
           </li>
           <li class="user-list__item">
-            <a class="user-list__basket" href="#">
+            <a class="user-list__link user-list__link--basket" href="#">
               Корзина: пока пуста
             </a>
           </li>
@@ -48,45 +49,45 @@
             <legend class="order__legend">
               Тип
             </legend>
-            <ul class="order__type-list">
+            <ul class="order__list">
               <li>
                 <input type="radio" name="type" class="order__type-radio visually-hidden" value="interior" id="type-interior" checked>
-                <label class="order__type-item" for="type-interior">Аксессуар для интерьера</label>
+                <label class="order__item" for="type-interior">Аксессуар для интерьера</label>
               </li>
               <li>
                 <input type="radio" name="type" class="order__type-radio visually-hidden" value="toy" id="type-toy">
-                <label class="add-to-basket__size-item" for="type-toy">Детская игрушка</label>
+                <label class="order__item" for="type-toy">Детская игрушка</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="order__fieldset">
             <legend class="order__legend">
-              Тип
+              Цвет
             </legend>
-            <ul class="order__color-list">
+            <ul class="order__list">
               <li>
                 <input type="checkbox" name="white" class="order__type-checkbox visually-hidden" value="white" id="color-white" checked>
-                <label class="order__color-item" for="color-white">Белый</label>
+                <label class="order__item" for="color-white">Белый</label>
               </li>
               <li>
                 <input type="checkbox" name="grey" class="order__type-checkbox visually-hidden" value="grey" id="color-grey" checked>
-                <label class="order__color-item" for="color-grey">Серый</label>
+                <label class="order__item" for="color-grey">Серый</label>
               </li>
               <li>
                 <input type="checkbox" name="tiffany" class="order__type-checkbox visually-hidden" value="tiffany" id="color-tiffany">
-                <label class="order__color-item" for="color-tiffany">Тиффани</label>
+                <label class="order__item" for="color-tiffany">Тиффани</label>
               </li>
               <li>
                 <input type="checkbox" name="black" class="order__type-checkbox visually-hidden" value="black" id="color-black">
-                <label class="order__color-item" for="color-black">Черный</label>
+                <label class="order__item" for="color-black">Черный</label>
               </li>
               <li>
                 <input type="checkbox" name="pink" class="order__type-checkbox visually-hidden" value="pink" id="color-pink">
-                <label class="order__color-item" for="color-pink">Розовый</label>
+                <label class="order__item" for="color-pink">Розовый</label>
               </li>
               <li>
                 <input type="checkbox" name="orange" class="order__type-checkbox visually-hidden" value="orange" id="color-orange">
-                <label class="order__color-item" for="color-orange">Оранжевый</label>
+                <label class="order__item" for="color-orange">Оранжевый</label>
               </li>
             </ul>
           </fieldset>
@@ -95,12 +96,15 @@
               ФИО
             </legend>
             <label class="order__full-name">
+              Фамилия:
               <input type="text" class="order__input" name="name" placeholder="Введите ваше имя*" required>
             </label>
             <label class="order__full-name">
+              Имя:
               <input type="text" class="order__input" name="last-name" placeholder="Укажите фамилию*" required>
             </label>
             <label class="order__full-name">
+              Отчество:
               <input type="text" class="order__input" name="middle-name" placeholder="Отчество, если желаете">
             </label>
           </fieldset>
@@ -123,7 +127,7 @@
               Доп
             </legend>
             <label class="order__additions visually-hidden" for="additions">Пожелания к заказу</label>
-            <textarea class="order__additions-textarea" name="additions" id="additions">
+            <textarea class="order__additions-textarea" name="additions" id="additions" rows="5">
               Опишите все ваши пожелания к заказу
             </textarea>
           </fieldset>
@@ -155,7 +159,7 @@
           Разработано
         </b>
         <a class="copyright__htmlacademylogo" href="#">
-          <img class="copyright__htmlacademy-logo-img" src="placehold.it">
+          <img class="copyright__htmlacademy-logo-img" src="img/logo-htmlacademy.svg" width="26" height="34" alt="Логотип HTMLacademy" >
         </a>
       </div>
     </footer>
