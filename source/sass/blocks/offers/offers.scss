@@ -1,0 +1,19 @@
+.offers__link {
+  display: block;
+  width: 260px;
+  margin: 0 -30px;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 30px;
+}
+
+.offers__link--light {
+  background-color: #63d1bb;
+}
+
+.offers__link--dark {
+  background-color: #56c3b2;
+}

@@ -1,0 +1,27 @@
+.add-to-basket {
+  padding: 20px 0;
+}
+
+.add-to-basket__title {
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.add-to-basket__legend {
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.add-to-basket__fieldset {
+  border: none;
+}
+
+.add-to-basket__size-list {
+  list-style: none;
+  display: flex;
+  margin-bottom: 36px;
+}
+

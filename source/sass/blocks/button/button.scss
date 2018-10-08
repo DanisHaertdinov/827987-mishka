@@ -1,0 +1,21 @@
+.button {
+  display: block;
+  width: 260px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #444444;
+  padding: 14px 0;
+  text-align: center;
+  border: 2px solid #444444;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.button--teal {
+  background-color: #63d1bb;
+  color: #ffffff;
+  border: none;
+}
