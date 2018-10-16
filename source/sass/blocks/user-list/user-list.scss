@@ -1,5 +1,4 @@
 .user-list {
-  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -16,4 +15,27 @@
 .user-list__link {
   color: #000000;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    width: 320px;
+    display: flex;
+  }
+
+  .user-list__item {
+    margin: 0;
+    border: none;
+    border-left: 1px solid #ececec;
+    padding-top: 20px;
+    text-align: right;
+  }
+
+  .user-list__item--search {
+    width: 84px;
+  }
+
+  .user-list__item-name--search {
+    display: none;
+  }
 }

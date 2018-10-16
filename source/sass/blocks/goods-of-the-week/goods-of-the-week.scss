@@ -22,10 +22,12 @@
   line-height: 20px;
   font-weight: bold;
   color: #63d1bb;
+  text-transform: uppercase;
 }
 
 .goods-of-the-week__description {
   line-height: 24px;
+  margin: 0;
   margin-bottom: 18px;
 }
 
@@ -50,7 +52,8 @@
   padding-top: 15px;
 }
 
-.goods-of-the-week__img {
+.goods-of-the-week__photo {
+  margin: 0;
   margin-bottom: 28px;
 }
 
@@ -61,4 +64,100 @@
   text-align: center;
   margin-bottom: 24px;
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .goods-of-the-week {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .goods-of-the-week__name-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 23px;
+  }
+
+  .goods-of-the-week__name {
+    font-size: 43px;
+    line-height: 50px;
+    margin: 0;
+  }
+
+  .goods-of-the-week__title {
+    line-height: 17px;
+    width: 113px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .goods-of-the-week__description-wrapper {
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 45px;
+  }
+
+  .goods-of-the-week__description {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .goods-of-the-week__list {
+    width: 100%;
+  }
+
+  .goods-of-the-week__photo {
+    width: 50%;
+    margin-top: 10px;
+  }
+
+  .goods-of-the-week__photo-img {
+    height: 403px;
+  }
+
+  .goods-of-the-week__cost-wrapper {
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 45px;
+    margin-top: -132px;
+  }
+
+  .goods-of-the-week__cost {
+    font-size: 20px;
+  }
+
+  .goods-of-the-week__order {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goods-of-the-week__name-wrapper {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-bottom: -110px;
+    z-index: 1;
+  }
+
+  .goods-of-the-week__name {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .goods-of-the-week__description-wrapper {
+    padding-left: 175px;
+    padding-right: 58px;
+    margin-top: 150px;
+  }
+
+  .goods-of-the-week__photo-img {
+    height: 638px;
+  }
+
+  .goods-of-the-week__cost-wrapper {
+    padding-right: 58px;
+    padding-left: 175px;
+  }
 }

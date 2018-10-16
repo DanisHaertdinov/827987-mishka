@@ -1,6 +1,6 @@
 .offers__link {
   display: block;
-  width: 260px;
+  width: 320px;
   margin: 0 -30px;
   font-size: 19px;
   line-height: 24px;
@@ -8,6 +8,7 @@
   text-decoration: none;
   color: #ffffff;
   padding: 30px;
+  box-sizing: border-box;
 }
 
 .offers__link--light {
@@ -16,4 +17,24 @@
 
 .offers__link--dark {
   background-color: #56c3b2;
+}
+
+@media (min-width: $tablet-width) {
+  .offers {
+    display: flex;
+  }
+
+  .offers__link {
+    width: 50%;
+    margin: 0;
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 137px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .offers__link {
+    padding-right: 355px;
+  }
 }

@@ -22,3 +22,56 @@
 .main-navigation__toggle--open {
   background-image: url("../img/icon-menu-open.svg");
 }
+
+.main-navigation__site-list {
+  margin: 0;
+}
+
+.main-navigation__user-list {
+  margin: 0;
+}
+
+.main-navigation__sale-list {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+
+  .main-navigation__toggle {
+    display: none;
+  }
+
+  .main-navigation__user-list {
+    align-self: flex-end;
+  }
+
+  .main-navigation__site-list {
+    align-self: flex-start;
+    margin: 0;
+    margin-bottom: -80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-navigation {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .main-navigation__site-list {
+    margin: 0;
+  }
+
+  .main-navigation__user-list {
+    margin-left: 409px;
+  }
+
+  .main-navigation__sale-list {
+    margin-bottom: -80px;
+  }
+}

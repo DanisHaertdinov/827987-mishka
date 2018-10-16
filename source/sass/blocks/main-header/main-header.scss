@@ -11,3 +11,23 @@
   font-weight: bold;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    padding-top: 20px;
+  }
+
+  .main-header__title {
+    margin-top: 114px;
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 392px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

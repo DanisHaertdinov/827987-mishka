@@ -7,3 +7,11 @@
 .catalog__item {
   margin-bottom: 36px;
 }
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

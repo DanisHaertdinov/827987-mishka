@@ -22,15 +22,18 @@
   text-transform: uppercase;
   color: #63d1bb;
   font-weight: bold;
+  margin: 0;
 }
 
-.order__list {
+.order__type-list,
+.order__color-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.order__item {
+.order__type-item,
+.order__color-item {
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
@@ -64,4 +67,118 @@
   line-height: 16px;
   margin: 0;
   margin-bottom: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .order__text {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .order__fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    justify-content: flex-end;
+  }
+
+  .order__legend {
+    margin-right: 110px;
+    width: 55px;
+  }
+
+  .order__type-list {
+    margin-right: auto;
+  }
+
+  .order__color-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 499px;
+    margin-right: auto;
+  }
+
+  .order__color-item {
+    width: 230px;
+  }
+
+  .order__fieldset--grey {
+    background-color: #f1f1f1;
+    width: 668px;
+    margin-right: -50px;
+    margin-left: -50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .order__full-name {
+    width: 501px;
+    display: flex;
+  }
+
+  .order__input {
+    flex-grow: 1;
+  }
+
+  .order__input--email,
+  .order__input--tel {
+    background-color: #f1f1f1;
+  }
+
+  .order__additions-textarea {
+    margin-right: auto;
+    flex-grow: 1;
+  }
+
+  .order__required-text {
+    font-size: 17px;
+    line-height: 30px;
+    margin: 0;
+    align-self: center;
+  }
+
+  .order__button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .order__text {
+    width: 693px;
+  }
+
+  .order__color-list {
+    width: 740px;
+  }
+
+  .order__fieldset--grey {
+    width: 1050px;
+    margin-right: -100px;
+    margin-left: -100px;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  .order__full-name {
+    width: 700px;
+    margin-right: 175px;
+  }
+
+  .order__input--tel,
+  .order__input--email {
+    margin-right: 175px;
+  }
+
+  .order__additions-textarea {
+    margin-right: 175px;
+  }
+
+  .order__button-wrapper {
+    margin-right: 175px;
+    margin-left: 175px;
+  }
 }
