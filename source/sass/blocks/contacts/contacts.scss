@@ -1,19 +1,25 @@
 .contacts {
   font-size: 15px;
   line-height: 30px;
-  border-collapse: collapse;
 }
 
 .contacts__title {
   font-size: 18px;
+  margin: 0;
   margin-bottom: 36px;
   font-weight: bold;
-  text-align: left;
+}
+
+.contacts__item {
+  margin: 0;
+  display: flex;
+  color: #444444;
 }
 
 .contacts__field {
-  width: 76px;
   vertical-align: top;
+  margin-right: 20px;
+  margin-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {

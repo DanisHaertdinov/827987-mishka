@@ -2,14 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html"><img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин товаров ручной работы Мишка">
-      </a>
       <nav class="page-header__main-navigation main-navigation">
+        <a class="main-navigation__logo" href="index.html"><img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин товаров ручной работы Мишка">
+        </a>
         <button class="main-navigation__toggle main-navigation__toggle--close" type="button"><span class="visually-hidden">открыть/закрыть меню</span></button>
         <ul class="main-navigation__site-list site-list">
           <li class="site-list__item">
@@ -47,8 +48,8 @@
             </a>
           </li>
         </ul>
+        <p class="main-navigation__free-order-text">Бесплатная доставка по России</p>
       </nav>
-      <p class="page-header__free-order-text">Бесплатная доставка по России</p>
     </header>
     <main class="page-main">
       <h1 class="page-main__title">Каталог товаров</h1>
@@ -108,12 +109,15 @@
         </ul>
       </section>
       <section class="page-main__production production">
-        <h2 class="production__title">
+        <h2 class="production__title production__title--top">
           Процесс производства
         </h2>
         <video class="production__video"  poster="img/video-mobile@1x.jpg">
         </video>
         <div class="production__text-wrapper">
+          <h2 class="production__title production__title--bottom">
+              Процесс производства
+          </h2>
           <p class="production__text">
           По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
           </p>

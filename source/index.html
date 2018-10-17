@@ -2,15 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo"><img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин товаров ручной работы Мишка">
-      </a>
       <nav class="page-header__main-navigation main-navigation">
+        <a class="main-navigation__logo"><img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин товаров ручной работы Мишка">
+        </a>
         <button class="main-navigation__toggle main-navigation__toggle--close" type="button"><span class="visually-hidden">открыть/закрыть меню</span></button>
         <ul class="main-navigation__site-list site-list">
           <li class="site-list__item">
@@ -48,12 +48,12 @@
             </a>
           </li>
         </ul>
+        <p class="main-navigation__free-order-text">Бесплатная доставка по России</p>
       </nav>
-      <p class="page-header__free-order-text">Бесплатная доставка по России</p>
     </header>
     <main class="page-main page-main--index">
       <h1 class="visually-hidden">Интернет магазин товаров ручной работы "Мишка" </h1>
-      <header class="main-header">
+      <header class="page-main__header main-header">
         <p class="main-header__title">
           Милые штуки ручной
           <br>
@@ -175,31 +175,27 @@
         <h2 class="visually-hidden">
           Как нас найти
         </h2>
-        <table class="location__contacts contacts">
-          <caption class="contacts__title">
+        <div class="location__contacts contacts">
+          <h3 class="contacts__title">
             Контакты
-          </caption>
-          <tbody class="contacts__wrapper">
-            <tr class="contacts__item">
-              <td class="contacts__field">
+          </h3>
+          <div class="contacts__wrapper">
+            <p class="contacts__item">
+              <span class="contacts__field">
                 e-mail:
-              </td>
-              <td class="contacts__value contacts_value--underline">
-                info@mimimishkashop.ru
-              </td>
-            </tr>
-            <tr class="contacts__item">
-              <td class="contacts__field">
+              </span>
+              info@mimimishkashop.ru
+            </p>
+            <p class="contacts__item">
+              <span class="contacts__field">
                 адрес:
-              </td>
-              <td class="contacts__value">
-                г. Санкт-Петербург,
-                ул. Большая Конюшенная,
-                д. 19/8, офис 101
-              </td>
-            </tr>
-          </tbody>
-        </table>
+              </span>
+              г. Санкт-Петербург,
+              ул. Большая Конюшенная,
+              д. 19/8, офис 101
+            </p>
+          </div>
+        </div>
         <p class="location__map">
           <img class="location__map-image" src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта">
         </p>
