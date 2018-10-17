@@ -5,3 +5,31 @@
   padding-bottom: 22px;
   background-color: #f1f1f1;
 }
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    width: 668px;
+    padding: 26px 50px;
+    display: flex;
+  }
+
+  .page-footer__logo {
+    display: block;
+  }
+
+  .page-footer__social {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: 1050px;
+    padding: 26px 100px;
+  }
+}

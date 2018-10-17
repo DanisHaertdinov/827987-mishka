@@ -8,12 +8,25 @@
   font-weight: bold;
   color: #000000;
   border-bottom: 1px solid #ececec;
+  position: relative;
 }
 
-.page-header__logo {
-  margin: 0;
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: 668px;
+    padding: 0 50px;
+    border: none;
+  }
+
+  .page-header__main-navigation {
+    margin: 0;
+  }
 }
 
-.page-header__main-navigation {
-  margin-top: 20px;
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1050px;
+    padding: 0 100px;
+  }
 }

@@ -11,3 +11,32 @@
   margin-bottom: 38px;
   width: 320px;
 }
+
+@media (min-width: $tablet-width) {
+  .location__wright-us {
+    width: 231px;
+  }
+
+  .location__map {
+    margin: 0;
+    margin-bottom: 38px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .location {
+    padding-left: 175px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .location__map {
+    width: 50%;
+    margin: 0;
+  }
+
+  .location__wright-us {
+    margin-top: -53px;
+    margin-left: 34px;
+  }
+}

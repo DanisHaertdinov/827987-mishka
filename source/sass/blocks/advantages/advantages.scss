@@ -21,3 +21,41 @@
 .advantages__item {
   padding-top: 55px;
 }
+
+@media (min-width: $tablet-width) {
+  .advantages__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .advantages__item {
+    width: 50%;
+  }
+
+  .advantages__item:nth-child(3n+2) {
+    order: 1;
+  }
+
+  .advantages__item:nth-child(3n+3) {
+    order: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    padding-left: 175px;
+    padding-right: 175px;
+  }
+
+  .advantages__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
