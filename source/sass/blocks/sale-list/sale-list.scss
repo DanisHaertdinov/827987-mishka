@@ -8,14 +8,22 @@
 
 .sale-list__item {
   margin: 0;
-  padding-top: 20px;
+  padding-top: 18px;
   padding-bottom: 32px;
-  margin-right: 30px;
+  margin-right: 73px;
 }
 
 .sale-list__link {
   color: #000000;
   text-decoration: none;
+}
+
+.sale-list__link:hover {
+  opacity: 0.6;
+}
+
+.sale-list:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $desktop-width) {

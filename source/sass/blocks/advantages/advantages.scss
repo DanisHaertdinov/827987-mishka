@@ -1,5 +1,5 @@
 .advantages {
-  padding: 35px 0;
+  padding: 28px 30px;
 }
 
 .advantages__title {
@@ -19,10 +19,50 @@
 }
 
 .advantages__item {
-  padding-top: 55px;
+  padding-top: 83px;
+  background-repeat: no-repeat;
+  padding-right: 74px;
+}
+
+.advantages__item:nth-child(n+4) {
+  padding-right: 30px;
+}
+
+.advantages__item--flower {
+  background-image: url("../img/icon-feature-flower.svg");
+  background-position: 8px 32px;
+}
+
+.advantages__item--ball {
+  background-image: url("../img/icon-feature-ball.svg");
+  background-position: 3px 35px;
+}
+
+.advantages__item--gift {
+  background-image: url("../img/icon-feature-gift.svg");
+  background-position: 3px 34px;
+}
+
+.advantages__item--heart {
+  background-image: url("../img/icon-feature-heart.svg");
+  background-position: 7px 38px;
+}
+
+.advantages__item--money {
+  background-image: url("../img/icon-feature-money.svg");
+  background-position: 0 33px;
+}
+
+.advantages__item--rocket {
+  background-image: url("../img/icon-feature-rocket.svg");
+  background-position: 0 36px;
 }
 
 @media (min-width: $tablet-width) {
+  .advantages {
+    padding: 51px 50px;
+  }
+
   .advantages__title {
     font-size: 43px;
     line-height: 50px;
@@ -37,6 +77,14 @@
 
   .advantages__item {
     width: 50%;
+    box-sizing: border-box;
+    padding-top: 104px;
+    margin-bottom: 6px;
+    padding-right: 122px;
+  }
+
+  .advantages__item:nth-child(n+4) {
+    padding-right: 60px;
   }
 
   .advantages__item:nth-child(3n+2) {
@@ -46,16 +94,47 @@
   .advantages__item:nth-child(3n+3) {
     order: 2;
   }
+
+  .advantages__item--flower {
+    background-position: 8px 49px;
+  }
+
+  .advantages__item--money {
+    background-position: 1px 51px;
+  }
+
+  .advantages__item--heart {
+    background-position: 8px 56px;
+  }
+
+  .advantages__item--ball {
+    background-position: 3px 52px;
+  }
+
+  .advantages__item--rocket {
+    background-position: 0 54px;
+  }
+
+  .advantages__item--gift {
+    background-position: 3px 53px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .advantages {
-    padding-left: 175px;
-    padding-right: 175px;
+    padding: 56px 175px;
   }
 
   .advantages__title {
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .advantages__item {
+    padding-right: 130px;
+  }
+
+  .advantages__item:nth-child(n+4) {
+    padding-right: 78px;
   }
 }

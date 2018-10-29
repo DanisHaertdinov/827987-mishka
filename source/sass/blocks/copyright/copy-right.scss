@@ -3,4 +3,25 @@
   line-height: 18px;
   font-weight: bold;
   display: flex;
+  padding-top: 23px;
+  padding-left: 39px;
+}
+
+.copyright__developed-by {
+  margin-top: 5px;
+  margin-right: 36px;
+}
+
+.copyright__htmlacademy-link {
+  color: #000000;
+  text-decoration: none;
+  display: flex;
+}
+
+.copyright__htmlacademy-link:hover .copyright__htmlacademy-logo {
+  fill: #46c1ae;
+}
+
+.copyright__htmlacademy-link:active {
+  opacity: 0.3;
 }
