@@ -19,13 +19,13 @@
 }
 
 .advantages__item {
-  padding-top: 83px;
+  padding-top: 84px;
   background-repeat: no-repeat;
-  padding-right: 74px;
+  padding-right: 60px;
 }
 
 .advantages__item:nth-child(n+4) {
-  padding-right: 30px;
+  padding-right: 9px;
 }
 
 .advantages__item--flower {
@@ -35,17 +35,17 @@
 
 .advantages__item--ball {
   background-image: url("../img/icon-feature-ball.svg");
-  background-position: 3px 35px;
+  background-position: 3px 32px;
 }
 
 .advantages__item--gift {
   background-image: url("../img/icon-feature-gift.svg");
-  background-position: 3px 34px;
+  background-position: 3px 29px;
 }
 
 .advantages__item--heart {
   background-image: url("../img/icon-feature-heart.svg");
-  background-position: 7px 38px;
+  background-position: 7px 36px;
 }
 
 .advantages__item--money {
@@ -55,7 +55,7 @@
 
 .advantages__item--rocket {
   background-image: url("../img/icon-feature-rocket.svg");
-  background-position: 0 36px;
+  background-position: 0 32px;
 }
 
 @media (min-width: $tablet-width) {
@@ -80,11 +80,11 @@
     box-sizing: border-box;
     padding-top: 104px;
     margin-bottom: 6px;
-    padding-right: 122px;
+    padding-right: 92px;
   }
 
   .advantages__item:nth-child(n+4) {
-    padding-right: 60px;
+    padding-right: 40px;
   }
 
   .advantages__item:nth-child(3n+2) {
@@ -131,10 +131,10 @@
   }
 
   .advantages__item {
-    padding-right: 130px;
+    padding-right: 114px;
   }
 
   .advantages__item:nth-child(n+4) {
-    padding-right: 78px;
+    padding-right: 55px;
   }
 }
