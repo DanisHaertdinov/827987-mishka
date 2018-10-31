@@ -96,10 +96,16 @@
   .main-navigation__logo {
     align-self: center;
     margin: 0;
+    margin-top: 8px;
+  }
+
+  .main-navigation__logo-image {
+    width: 112px;
+    height: 46px;
   }
 
   .main-navigation__user-list {
-    margin-left: 209px;
+    margin-left: 204px;
   }
 
   .main-navigation__site-list {
@@ -124,10 +130,15 @@
   .main-navigation__site-list {
     margin: 0;
     order: -1;
-    margin-right: auto;
+    margin-right: 40px;
   }
 
   .main-navigation__user-list {
     margin-left: auto;
+  }
+
+  .main-navigation__logo-image {
+    width: 148px;
+    height: 73px;
   }
 }

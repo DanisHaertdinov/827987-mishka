@@ -24,6 +24,10 @@
   padding-right: 60px;
 }
 
+.advantages__item:nth-child(1) {
+  padding-right: 67px;
+}
+
 .advantages__item:nth-child(n+4) {
   padding-right: 9px;
 }
@@ -83,6 +87,10 @@
     padding-right: 92px;
   }
 
+  .advantages__item:nth-child(1) {
+    padding-right: 103px;
+  }
+
   .advantages__item:nth-child(n+4) {
     padding-right: 40px;
   }
@@ -132,6 +140,10 @@
 
   .advantages__item {
     padding-right: 114px;
+  }
+
+  .advantages__item:nth-child(1) {
+    padding-right: 120px;
   }
 
   .advantages__item:nth-child(n+4) {

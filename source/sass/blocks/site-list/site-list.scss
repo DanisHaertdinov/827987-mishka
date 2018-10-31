@@ -53,11 +53,12 @@
 
   .site-list__item {
     padding-top: 31px;
+    padding-bottom: 31px;
   }
 
   .site-list__item:nth-child(1) {
     margin-right: 34px;
-    padding-right: 49px;
+    padding-right: 36px;
     border-right: 1px solid #ececec;
   }
 }

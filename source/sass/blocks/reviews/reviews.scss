@@ -97,6 +97,11 @@
     background-repeat: no-repeat, repeat-x;
     background-position: left 27px, bottom;
     background-size: auto, 698px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg"), url("../img/bg-zigzag-line.svg");
+      background-size: 350px auto, 698px;
+    }
   }
 
   .reviews__title {

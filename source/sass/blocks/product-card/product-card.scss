@@ -18,6 +18,11 @@
   margin-bottom: 23px;
 }
 
+.product-card__photo-img {
+  width: 260px;
+  height: 195px;
+}
+
 .product-card__link {
   text-decoration: none;
   display: block;
@@ -97,7 +102,8 @@
   }
 
   .product-card__photo {
-    width: 50%;
+    width: 334px;
+    height: 334px;
     display: flex;
     margin: 0;
     box-sizing: border-box;
@@ -109,7 +115,7 @@
   }
 
   .product-card__parameters-wrapper {
-    width: 50%;
+    width: 335px;
     display: flex;
     flex-direction: column;
     padding-top: 25px;
@@ -154,6 +160,7 @@
   .product-card__photo {
     width: 100%;
     display: block;
+    height: auto;
   }
 
   .product-card__photo-img {
