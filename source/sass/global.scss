@@ -8,7 +8,7 @@
 }
 
 @font-face {
-  font-family: "Opensans bold";
+  font-family: "Opensans";
   src: local("opensansbold"),
     url("../fonts/opensansbold.woff2") format("woff2"),
     url("../fonts/opensansbold.woff") format("woff");
@@ -22,6 +22,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
+  position: relative;
 }
 
 img {
@@ -45,4 +46,20 @@ input[type="radio"].visually-hidden {
 
   border: 0;
   clip-path: inset(100%);
+}
+
+.overlay {
+  display: none;
+}
+
+.overlay--opened {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  opacity: 0.9;
+  z-index: 9;
+  display: block;
 }

@@ -1,10 +1,14 @@
 .main-header {
   padding-top: 72px;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center -19px;
 }
 
 .main-header__title {
   margin: 0;
-  margin-bottom: 117px;
+  margin-bottom: 120px;
+  padding: 0 30px;
 
   font-size: 27px;
   line-height: 30px;
@@ -14,20 +18,31 @@
 
 @media (min-width: $tablet-width) {
   .main-header {
-    padding-top: 20px;
+    padding-top: 39px;
     border-top: 1px solid #ececec;
-    width: 668px;
-    margin-left: -50px;
-    margin-right: -50px;
     padding-left: 50px;
     padding-right: 50px;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: center -1px;
+    position: relative;
+  }
+
+  .main-header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -18px;
+    height: 27px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-size: 770px;
   }
 
   .main-header__title {
     margin-top: 114px;
     font-size: 43px;
     line-height: 50px;
-    margin-bottom: 392px;
+    margin-bottom: 373px;
   }
 }
 
@@ -35,13 +50,21 @@
   .main-header__title {
     font-size: 53px;
     line-height: 57px;
+    margin-bottom: 359px;
   }
 
   .main-header {
     width: 1050px;
-    margin-left: -100px;
-    margin-right: -100px;
-    padding-left: 100px;
-    padding-right: 100px;
+    margin-left: -50px;
+    margin-right: -50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .main-header::after {
+    height: 34px;
+    background-size: 1250px;
+    bottom: -20px;
+    background-position: 14px;
   }
 }
