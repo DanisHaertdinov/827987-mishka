@@ -160,7 +160,9 @@
   font-size: 17px;
   line-height: 18px;
   width: 260px;
-  border: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
   border-bottom: 2px solid #000000;
   padding-bottom: 17px;
   color: #444444;
@@ -175,7 +177,7 @@
   border-color: #61d1ba;
 }
 
-.order__input:hover + .order__input-logo {
+.order__input:hover + .order__input-icon {
   opacity: 1;
   fill: #61d1ba;
 }
@@ -192,7 +194,7 @@
   box-sizing: border-box;
 }
 
-.order__input-logo--tel {
+.order__input-icon--tel {
   position: absolute;
   right: 8px;
   bottom: 17px;
@@ -201,7 +203,7 @@
   opacity: 0.2;
 }
 
-.order__input-logo--email {
+.order__input-icon--email {
   position: absolute;
   right: 4px;
   bottom: 14px;
@@ -282,7 +284,7 @@
   }
 
   .order__type-list {
-    margin-right: auto;
+    margin-right: 167px;
   }
 
   .order__color-list {
@@ -347,12 +349,12 @@
     padding-right: 50px;
   }
 
-  .order__input-logo--tel {
+  .order__input-icon--tel {
     right: 76px;
     bottom: 18px;
   }
 
-  .order__input-logo--email {
+  .order__input-icon--email {
     right: 72px;
     bottom: 63px;
   }
@@ -374,6 +376,7 @@
     margin-left: 26px;
     padding-bottom: 14px;
     padding-left: 16px;
+    height: 26px;
   }
 
   .order__input--email,
@@ -426,11 +429,11 @@
     margin-left: 175px;
   }
 
-  .order__input-logo--tel {
+  .order__input-icon--tel {
     right: 233px;
   }
 
-  .order__input-logo--email {
+  .order__input-icon--email {
     right: 229px;
     bottom: 66px;
   }
@@ -442,6 +445,10 @@
 
   .order__legend--no-label {
     margin-right: 28px;
+  }
+
+  .order__type-list {
+    margin-right: 541px;
   }
 
   .order__color-list {
@@ -488,27 +495,34 @@
   }
 }
 
-input::placeholder,
-textarea::placeholder {
-  color: rgba(68, 68, 68, 0.3);
+*::-webkit-input-placeholder {
+  opacity: 0.3;
 }
 
-input:-moz-placeholder,
-textarea:-moz-placeholder {
-  color: rgba(68, 68, 68, 0.3);
+*::-moz-placeholder {
+  opacity: 0.3;
 }
 
-input::-moz-placeholder,
-textarea::-moz-placeholder {
-  color: rgba(68, 68, 68, 0.3);
+*:-ms-input-placeholder {
+  opacity: 0.3;
 }
 
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
-  color: rgba(68, 68, 68, 0.3);
+*:-moz-placeholder {
+  opacity: 0.3;
 }
 
-input::-ms-input-placeholder,
-textarea::-ms-input-placeholder {
-  color: rgba(68, 68, 68, 0.3);
+input::placeholder {
+  opacity: 0.3;
+}
+
+input:-moz-placeholder {
+  opacity: 0.3;
+}
+
+input::-moz-placeholder {
+  opacity: 0.3;
+}
+
+input::-ms-input-placeholder {
+  opacity: 0.3;
 }

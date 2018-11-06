@@ -16,14 +16,6 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
-.offers__link:active .offers__link--dark::after {
-  opacity: 0.3;
-}
-
-.offers__link:active .offers__link--light::after {
-  opacity: 0.3;
-}
-
 .offers__link--light {
   background-color: #63d1bb;
 }
@@ -56,6 +48,13 @@
   opacity: 0.5;
 }
 
+.offers__link--dark:active::after {
+  opacity: 0.3;
+}
+
+.offers__link--light:active::after {
+  opacity: 0.3;
+}
 
 @media (min-width: $tablet-width) {
   .offers {

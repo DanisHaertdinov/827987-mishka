@@ -81,9 +81,6 @@
 
 .product-card__icon:hover {
   opacity: 1;
-}
-
-.product-card__icon:hover path {
   fill: #63d1bb;
 }
 
@@ -91,7 +88,7 @@
   opacity: 0.3;
 }
 
-.product-card__icon:active path {
+.product-card__icon:active .product-card__icon {
   fill: #63d1bb;
 }
 

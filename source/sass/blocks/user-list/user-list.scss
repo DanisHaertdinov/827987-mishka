@@ -29,17 +29,11 @@
 
 .user-list__link:hover .user-list__icon {
   opacity: 1;
-}
-
-.user-list__link:hover path {
   fill: #63d1bb;
 }
 
 .user-list__link:active .user-list__icon {
   opacity: 0.3;
-}
-
-.user-list__link:active path {
   fill: #63d1bb;
 }
 
