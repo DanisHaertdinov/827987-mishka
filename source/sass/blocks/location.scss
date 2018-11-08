@@ -79,15 +79,15 @@
 @media (min-width: $desktop-width) {
   .location {
     box-sizing: border-box;
-    width: 1250px;
+    width: 1150px;
     margin: 0 auto;
-    padding-left: 275px;
-    padding-right: 100px;
+    padding-left: 225px;
+    padding-right: 50px;
     padding-top: 75px;
     padding-bottom: 102px;
     display: flex;
     flex-wrap: wrap;
-    background-position: 163px 137px;
+    background-position: 113px 137px;
   }
 
   .location__map {
