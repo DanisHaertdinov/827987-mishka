@@ -1,4 +1,8 @@
 .page-footer {
+  background-color: #f1f1f1;
+}
+
+.page-footer__wrapper {
   width: 260px;
   margin: 0 auto;
   padding: 26px 30px;
@@ -11,7 +15,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer {
+  .page-footer__wrapper {
     width: 668px;
     padding: 0 50px;
     padding-top: 35px;
@@ -42,10 +46,15 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer {
+  .page-footer__wrapper {
     width: 1050px;
     padding: 35px 50px;
     padding-bottom: 50px;
+  }
+
+  .page-footer__wrapper--index {
+    padding-right: 100px;
+    padding-left: 100px;
   }
 
   .page-footer__social {

@@ -1,3 +1,4 @@
+
 .offers__link {
   display: block;
   font-size: 19px;
@@ -58,7 +59,9 @@
 
 @media (min-width: $tablet-width) {
   .offers {
+    height: 121px;
     display: flex;
+    align-items: flex-end;
   }
 
   .offers__link {
@@ -69,10 +72,11 @@
     padding-right: 137px;
     padding-left: 36px;
     padding-top: 26px;
+    height: 116px;
   }
 
   .offers__link:hover {
-    bottom: 5px;
+    height: 121px;
   }
 
   .offers__link--light::after {

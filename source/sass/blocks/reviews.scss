@@ -3,8 +3,8 @@
   padding-bottom: 50px;
   padding-top: 24px;
   background-image: url("../img/bg-zigzag-line.svg");
-  background-position: bottom;
-  background-size: 300px 6px;
+  background-position: 8px bottom;
+  background-size: 320px 6px;
   background-repeat: repeat-x;
 }
 
@@ -95,8 +95,8 @@
     align-items: flex-start;
     background-image: url("../img/review@1x.jpg"), url("../img/bg-zigzag-line.svg");
     background-repeat: no-repeat, repeat-x;
-    background-position: left 27px, bottom;
-    background-size: auto, 698px;
+    background-position: left 27px, 16px 551px;
+    background-size: auto, 772px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/review@2x.jpg"), url("../img/bg-zigzag-line.svg");
@@ -148,7 +148,7 @@
     padding-left: 175px;
     padding-top: 100px;
     padding-bottom: 152px;
-    background-position: 0 29px, bottom;
+    background-position: 0 29px, -26px 551px;
     background-size: auto, 1050px;
   }
 
