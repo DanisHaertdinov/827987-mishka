@@ -55,12 +55,13 @@
   .main-header::after {
     content: "";
     position: absolute;
-    width: 768px;
+    width: 100%;
     align-self: center;
-    bottom: -36px;
-    height: 46px;
+    bottom: -28px;
+    height: 50px;
     background-image: url("../img/bg-zigzag-fill.svg");
-    background-size: contain;
+    background-size: 770px;
+    background-position: 38px 13px;
     background-repeat: repeat-x;
   }
 
@@ -93,9 +94,8 @@
 
   .main-header::after {
     height: 40px;
-    bottom: -22px;
-    width: 1150px;
+    bottom: -23px;
     background-size: 1250px;
-    background-position: 12px;
+    background-position: 34px;
   }
 }
