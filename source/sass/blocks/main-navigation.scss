@@ -1,0 +1,144 @@
+.main-navigation {
+  padding: 0;
+  position: relative;
+}
+
+.main-navigation__logo {
+  margin: 0;
+  margin-bottom: 16px;
+  margin-right: 2px;
+  display: block;
+}
+
+.main-navigation__logo:hover {
+  opacity: 0.6;
+}
+
+.main-navigation__logo:active {
+  opacity: 0.3;
+}
+
+.main-navigation__toggle {
+  position: absolute;
+  right: 31px;
+  top: 10px;
+  width: 20px;
+  height: 14px;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: #ffffff;
+}
+
+.main-navigation__site-list {
+  margin: 0;
+}
+
+.main-navigation__user-list {
+  margin: 0;
+}
+
+.main-navigation__sale-list {
+  margin: 0;
+}
+
+.main-navigation__free-order-text {
+  display: none;
+  text-align: right;
+  margin: 0;
+  font-size: 15px;
+  line-height: 24px;
+  color: #444444;
+  font-weight: normal;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-navigation--closed .main-navigation__site-list {
+    display: none;
+  }
+
+  .main-navigation--closed .main-navigation__user-list {
+    display: none;
+  }
+
+  .main-navigation--closed .main-navigation__toggle {
+    background-image: url("../img/icon-menu-open.svg");
+  }
+
+  .main-navigation--opened .main-navigation__toggle {
+    background-image: url("../img/icon-menu-close.svg");
+    height: 20px;
+    top: 7px;
+  }
+
+  .main-navigation--no-js .main-navigation__toggle {
+    display: none;
+  }
+
+  .main-navigation--no-js .main-navigation__site-list {
+    display: block;
+  }
+
+  .main-navigation--no-js .main-navigation__user-list {
+    display: block;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-navigation__toggle {
+    display: none;
+  }
+
+  .main-navigation__logo {
+    align-self: center;
+    margin: 0;
+    margin-top: 8px;
+  }
+
+  .main-navigation__logo-image {
+    width: 112px;
+    height: 46px;
+  }
+
+  .main-navigation__user-list {
+    margin-left: 204px;
+  }
+
+  .main-navigation__site-list {
+    margin: 0;
+    order: 2;
+  }
+
+  .main-navigation__free-order-text {
+    display: block;
+    order: 3;
+    margin-left: auto;
+    margin-top: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-navigation {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .main-navigation__site-list {
+    margin: 0;
+    order: -1;
+    margin-right: 40px;
+  }
+
+  .main-navigation__user-list {
+    margin-left: auto;
+  }
+
+  .main-navigation__logo-image {
+    width: 148px;
+    height: 73px;
+  }
+}

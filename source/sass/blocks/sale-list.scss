@@ -1,0 +1,34 @@
+.sale-list {
+  padding: 0;
+  list-style: none;
+  font-size: 15px;
+  display: none;
+  margin-right: 30px;
+}
+
+.sale-list__item {
+  margin: 0;
+  padding-top: 18px;
+  padding-bottom: 32px;
+  margin-right: 62px;
+}
+
+.sale-list__link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.sale-list__link:hover {
+  opacity: 0.6;
+}
+
+.sale-list__link:active {
+  opacity: 0.3;
+}
+
+@media (min-width: $desktop-width) {
+  .sale-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

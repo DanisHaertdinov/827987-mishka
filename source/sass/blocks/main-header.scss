@@ -1,0 +1,101 @@
+.main-header {
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.main-header__wrapper {
+  padding-top: 72px;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center -19px;
+  background-color: #f9f9f9;
+  width: 320px;
+  margin: 0 auto;
+  display: block;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 575px auto;
+  }
+}
+
+.main-header__title {
+  margin: 0;
+  margin-bottom: 120px;
+  padding: 0 30px;
+
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    border-top: 1px solid #ececec;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-header__wrapper {
+    padding-top: 39px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: center -1px;
+    position: relative;
+    width: 668px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+      background-size: 1150px auto;
+    }
+  }
+
+  .main-header::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    align-self: center;
+    bottom: -28px;
+    height: 50px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-size: 770px;
+    background-position: 38px 13px;
+    background-repeat: repeat-x;
+  }
+
+  .main-header__title {
+    margin-top: 114px;
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 368px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 354px;
+  }
+
+  .main-header__wrapper {
+    width: 1050px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-image: url("../img/hero-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+      background-size: 1150px auto;
+    }
+  }
+
+  .main-header::after {
+    height: 40px;
+    bottom: -23px;
+    background-size: 1250px;
+    background-position: 34px;
+  }
+}

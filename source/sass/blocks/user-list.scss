@@ -1,0 +1,101 @@
+.user-list {
+  padding: 0;
+  list-style: none;
+}
+
+.user-list__item {
+  border-top: 1px solid #ececec;
+}
+
+.user-list__link {
+  display: block;
+  color: #000000;
+  text-decoration: none;
+  padding: 0 30px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-right: 73px;
+  text-align: center;
+  position: relative;
+}
+
+.user-list__link:hover {
+  opacity: 0.6;
+}
+
+.user-list__link:active {
+  opacity: 0.3;
+}
+
+.user-list__link:hover .user-list__icon {
+  opacity: 1;
+  fill: #63d1bb;
+}
+
+.user-list__link:active .user-list__icon {
+  opacity: 0.3;
+  fill: #63d1bb;
+}
+
+.user-list__link--basket {
+  padding-right: 30px;
+}
+
+.user-list__icon {
+  position: absolute;
+  left: 32px;
+  top: 31px;
+  opacity: 0.2;
+}
+
+.user-list__icon--search {
+  width: 18px;
+  height: 18px;
+}
+
+.user-list__icon--basket {
+  width: 21px;
+  height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    width: 352px;
+    display: flex;
+  }
+
+  .user-list__item {
+    margin: 0;
+    border: none;
+    border-left: 1px solid #ececec;
+    padding-top: 30px;
+    padding-bottom: 34px;
+    text-align: right;
+  }
+
+  .user-list__item--search {
+    width: 84px;
+  }
+
+  .user-list__item-name--search {
+    display: none;
+  }
+
+  .user-list__item--basket {
+    padding-left: 82px;
+  }
+
+  .user-list__link {
+    padding: 0;
+  }
+
+  .user-list__icon--search {
+    top: 6px;
+    left: 33px;
+  }
+
+  .user-list__icon--basket {
+    left: -53px;
+    top: 5px;
+  }
+}
