@@ -33,6 +33,8 @@
 @media (min-width: $tablet-width) {
   .main-header {
     border-top: 1px solid #ececec;
+    display: flex;
+    flex-direction: column;
   }
 
   .main-header__wrapper {
@@ -53,13 +55,12 @@
   .main-header::after {
     content: "";
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -24px;
-    height: 35px;
+    width: 768px;
+    align-self: center;
+    bottom: -36px;
+    height: 46px;
     background-image: url("../img/bg-zigzag-fill.svg");
-    background-size: 768px 26px;
-    background-position: 4px 0;
+    background-size: contain;
     background-repeat: repeat-x;
   }
 
@@ -91,7 +92,10 @@
   }
 
   .main-header::after {
-    height: 34px;
-    bottom: -19px;
+    height: 40px;
+    bottom: -22px;
+    width: 1150px;
+    background-size: 1250px;
+    background-position: 12px;
   }
 }

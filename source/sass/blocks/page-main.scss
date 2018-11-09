@@ -41,7 +41,9 @@
 
   .page-main__title {
     position: relative;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 95px 50px;
     padding-bottom: 82px;
     margin-bottom: 70px;
@@ -54,8 +56,7 @@
   .page-main__title::after {
     content: "";
     position: absolute;
-    left: 0;
-    right: 0;
+    width: 768px;
     bottom: -13px;
     height: 27px;
     background-image: url("../img/bg-zigzag-fill.svg");
@@ -84,7 +85,6 @@
   }
 
   .page-main__title {
-    display: block;
     padding-bottom: 97px;
     margin-bottom: 126px;
     margin-top: -74px;
@@ -95,6 +95,7 @@
   .page-main__title::after {
     bottom: -22px;
     height: 36px;
+    width: 1150px;
     background-size: 1150px;
   }
 
