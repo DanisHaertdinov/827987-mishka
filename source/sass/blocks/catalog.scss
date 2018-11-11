@@ -37,17 +37,26 @@
 @media (min-width: $desktop-width) {
   .catalog {
     padding: 0;
-    padding-bottom: 57px;
+    padding-bottom: 20px;
     padding-top: 7px;
   }
 
   .catalog__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
 
   .catalog__item {
-    margin-bottom: 0;
+    margin-bottom: 37px;
+    margin-right: 48px;
+  }
+
+  .catalog__item:nth-last-of-type(1) {
+    margin-bottom: 37px;
+  }
+
+  .catalog__item:nth-child(3n+3) {
+    margin-right: 0;
   }
 }

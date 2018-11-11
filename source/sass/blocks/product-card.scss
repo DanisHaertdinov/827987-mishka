@@ -84,6 +84,11 @@
   fill: #63d1bb;
 }
 
+.product-card__icon-link:focus .product-card__icon {
+  opacity: 1;
+  fill: #63d1bb;
+}
+
 .product-card__icon:active {
   opacity: 0.3;
 }

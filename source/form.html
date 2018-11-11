@@ -122,13 +122,13 @@
     </header>
     <main class="page-main">
       <h1 class="page-main__title">Вязание на заказ</h1>
-      <div class="page-main__wrapper">
-        <section class="order">
-          <h2 class="order__title visually-hidden">Форма оформления заказа</h2>
-          <p class="order__text">
-            Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
-          </p>
-          <form class="order__form" method="post" action="https://echo.htmlacademy.ru">
+      <section class="order">
+        <h2 class="order__title visually-hidden">Форма оформления заказа</h2>
+        <p class="order__text">
+          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+        </p>
+        <form class="order__form" method="post" action="https://echo.htmlacademy.ru">
+          <div class="order__fieldset-wrapper">
             <div class="order__fieldset">
               <p class="order__legend">
                 Тип
@@ -144,6 +144,8 @@
                 </li>
               </ul>
             </div>
+          </div>
+          <div class="order__fieldset-wrapper order__fieldset-wrapper--grey">
             <div class="order__fieldset order__fieldset--grey">
               <p class="order__legend">
                 Цвет
@@ -175,6 +177,8 @@
                 </li>
               </ul>
             </div>
+          </div>
+          <div class="order__fieldset-wrapper">
             <div class="order__fieldset">
               <p class="order__legend order__legend--full-name">
                 ФИО
@@ -192,6 +196,8 @@
                 <input type="text" class="order__input" name="middle-name" placeholder="Отчество, если желаете">
               </label>
             </div>
+          </div>
+          <div class="order__fieldset-wrapper order__fieldset-wrapper--grey">
             <div class="order__fieldset order__fieldset--grey order__fieldset--tel">
               <p class="order__legend order__legend--no-label">
                 Тел
@@ -202,6 +208,8 @@
                 <use xlink:href="#icon-tel"></use>
               </svg>
             </div>
+          </div>
+          <div class="order__fieldset-wrapper order__fieldset-wrapper--grey">
             <div class="order__fieldset order__fieldset--grey order__fieldset--email">
               <p class="order__legend order__legend--no-label">
                 E-MAIL
@@ -212,24 +220,24 @@
                 <use xlink:href="#icon-mail"></use>
               </svg>
             </div>
-            <div class="order__textarea-wrapper">
-              <p class="order__legend order__legend--no-label">
-                Доп
-              </p>
-              <label class="order__additions visually-hidden" for="additions">Пожелания к заказу</label>
-              <textarea class="order__additions-textarea" name="additions" id="additions" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-            </div>
-            <div class="order__button-wrapper">
-              <p class="order__required-text">
-                <sup>*</sup>Поля обязательны для заполнения
-              </p>
-              <button class="order__send button" type="submit">
-              Отправить заказ
-              </button>
-            </div>
-          </form>
-        </section>
-      </div>
+          </div>
+          <div class="order__textarea-wrapper">
+            <p class="order__legend order__legend--no-label">
+              Доп
+            </p>
+            <label class="order__additions visually-hidden" for="additions">Пожелания к заказу</label>
+            <textarea class="order__additions-textarea" name="additions" id="additions" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
+          <div class="order__button-wrapper">
+            <p class="order__required-text">
+              <sup>*</sup>Поля обязательны для заполнения
+            </p>
+            <button class="order__send button" type="submit">
+            Отправить заказ
+            </button>
+          </div>
+        </form>
+      </section>
     </main>
       <footer class="page-footer">
         <div class="page-footer__wrapper">
@@ -267,7 +275,7 @@
             </ul>
           </div>
           <div class="page-footer__copyright copyright">
-            <a class="copyright__htmlacademy-link" href="#">
+            <a class="copyright__htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive">
               <b class="copyright__developed-by">
                 Разработано
               </b>
