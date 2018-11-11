@@ -1,6 +1,8 @@
 .order {
   padding: 0 30px;
   padding-bottom: 56px;
+  margin: 0 auto;
+  width: 260px;
 }
 
 .order__text {
@@ -11,16 +13,19 @@
   margin-bottom: 25px;
 }
 
-.order__fieldset {
+.order__fieldset-wrapper {
   border: none;
   padding: 0;
   margin: 0;
   margin-bottom: 44px;
-  position: relative;
   align-items: baseline;
 }
 
-.order__fieldset:nth-child(n+3) {
+.order__fieldset {
+  position: relative;
+}
+
+.order__fieldset-wrapper:nth-child(n+3) {
   margin-bottom: 31px;
 }
 
@@ -106,6 +111,10 @@
   border-color: #61d1ba;
 }
 
+.order__type-radio:focus + .order__type-item::before {
+  border-color: #61d1ba;
+}
+
 .order__type-item:active::before {
   opacity: 0.3;
   border-color: #444444;
@@ -129,6 +138,10 @@
 .order__color-item:active::before {
   opacity: 0.3;
   border-color: #444444;
+}
+
+.order__color-checkbox:focus + .order__color-item::before {
+  border-color: #61d1ba;
 }
 
 .order__color-item::after {
@@ -205,10 +218,10 @@
 
 .order__input-icon--email {
   position: absolute;
-  right: 4px;
-  bottom: 14px;
-  width: 32px;
-  height: 26px;
+  right: -1px;
+  bottom: 8px;
+  width: 42px;
+  height: 32px;
   opacity: 0.2;
 }
 
@@ -229,25 +242,40 @@
 
 @media (min-width: $tablet-width) {
   .order {
-    padding: 0 50px;
+    padding: 0;
+    margin: 0;
+    width: auto;
   }
 
   .order__text {
+    width: 668px;
+    margin: 0 auto;
+    padding: 0 50px;
     font-size: 17px;
     line-height: 30px;
     margin-bottom: 34px;
+  }
+
+  .order__fieldset-wrapper {
+    margin-bottom: 14px;
   }
 
   .order__fieldset {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    margin-bottom: 14px;
+    margin: 0 auto;
+    width: 668px;
+    padding: 0 50px;
   }
 
   .order__legend {
     margin-right: 110px;
     width: 55px;
+  }
+
+  .order__legend--full-name {
+    margin-top: 7px;
   }
 
   .order__legend::after {
@@ -257,28 +285,29 @@
   .order__legend--no-label {
     width: 81px;
     margin-right: 86px;
+    margin-top: 8px;
   }
 
-  .order__fieldset:nth-of-type(1) {
+  .order__fieldset-wrapper:nth-of-type(1) {
     padding-top: 40px;
   }
 
-  .order__fieldset:nth-of-type(2) {
+  .order__fieldset-wrapper:nth-of-type(2) {
     padding-top: 65px;
     padding-bottom: 10px;
   }
 
-  .order__fieldset:nth-of-type(3) {
+  .order__fieldset-wrapper:nth-of-type(3) {
     padding-top: 46px;
     margin-bottom: 16px;
   }
 
-  .order__fieldset:nth-of-type(4) {
+  .order__fieldset-wrapper:nth-of-type(4) {
     padding-top: 59px;
     margin-bottom: 0;
   }
 
-  .order__fieldset:nth-of-type(5) {
+  .order__fieldset-wrapper:nth-of-type(5) {
     padding-top: 33px;
     padding-bottom: 50px;
   }
@@ -340,23 +369,18 @@
     top: 0;
   }
 
-  .order__fieldset--grey {
+  .order__fieldset-wrapper--grey {
     background-color: #f1f1f1;
-    width: 668px;
-    margin-right: -50px;
-    margin-left: -50px;
-    padding-left: 50px;
-    padding-right: 50px;
   }
 
   .order__input-icon--tel {
     right: 76px;
-    bottom: 18px;
+    bottom: 17px;
   }
 
   .order__input-icon--email {
-    right: 72px;
-    bottom: 63px;
+    right: 67px;
+    bottom: 9px;
   }
 
   .order__full-name {
@@ -386,6 +410,9 @@
   }
 
   .order__textarea-wrapper {
+    width: 668px;
+    margin: 0 auto;
+    padding: 0 50px;
     display: flex;
     padding-top: 19px;
     align-items: baseline;
@@ -410,6 +437,9 @@
   }
 
   .order__button-wrapper {
+    width: 668px;
+    margin: 0 auto;
+    padding: 0 50px;
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
@@ -425,8 +455,7 @@
   }
 
   .order__text {
-    width: 693px;
-    margin-left: 175px;
+    width: 700px;
   }
 
   .order__input-icon--tel {
@@ -434,8 +463,8 @@
   }
 
   .order__input-icon--email {
-    right: 229px;
-    bottom: 66px;
+    right: 224px;
+    bottom: 10px;
   }
 
   .order__legend {
@@ -461,12 +490,8 @@
     width: 134px;
   }
 
-  .order__fieldset--grey {
+  .order__fieldset {
     width: 1050px;
-    margin-right: -50px;
-    margin-left: -50px;
-    padding-right: 50px;
-    padding-left: 50px;
   }
 
   .order__full-name {
@@ -482,6 +507,7 @@
   .order__textarea-wrapper {
     padding-top: 18px;
     margin-bottom: 49px;
+    width: 1050px;
   }
 
   .order__additions-textarea {
@@ -490,8 +516,7 @@
   }
 
   .order__button-wrapper {
-    margin-right: 175px;
-    margin-left: 175px;
+    width: 700px;
   }
 }
 

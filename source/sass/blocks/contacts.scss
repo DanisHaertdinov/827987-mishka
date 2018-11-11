@@ -19,6 +19,10 @@
   position: relative;
 }
 
+.contacts__item:nth-child(2) {
+  width: 230px;
+}
+
 .contacts__mail-link {
   text-decoration: none;
   color: #000000;
@@ -78,6 +82,10 @@
   .contacts__item {
     width: 50%;
   }
+
+  .contacts__item:nth-child(2) {
+    width: 50%;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -101,6 +109,10 @@
 
   .contacts__item {
     width: 100%;
+  }
+
+  .contacts__item:nth-child(2) {
+    width: 341px;
   }
 
   .contacts__mail-link::after {

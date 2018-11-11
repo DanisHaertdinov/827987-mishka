@@ -30,6 +30,7 @@
   margin: 0;
   margin-bottom: 25px;
   position: relative;
+  tab-index: 0;
 }
 
 .production__video::after {
@@ -43,7 +44,8 @@
   top: 37px;
 }
 
-.production__video:hover::after {
+.production__video:hover::after,
+.production__video:focus::after {
   transform: scale(1.2);
 }
 

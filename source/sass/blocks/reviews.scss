@@ -89,13 +89,14 @@
 @media (min-width: $tablet-width) {
   .reviews {
     padding: 106px 50px;
+    padding-bottom: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
     background-image: url("../img/review@1x.jpg"), url("../img/bg-zigzag-line.svg");
     background-repeat: no-repeat, repeat-x;
-    background-position: left 27px, 16px 551px;
+    background-position: left 27px, 16px bottom;
     background-size: auto, 772px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -148,7 +149,7 @@
     padding-left: 175px;
     padding-top: 100px;
     padding-bottom: 152px;
-    background-position: 0 29px, -26px 551px;
+    background-position: 0 29px, -26px bottom;
     background-size: auto, 1050px;
   }
 
